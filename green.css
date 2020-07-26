@@ -1,0 +1,35 @@
+
+:root {
+    --mainColor: #606B56;
+    --secondaryColor: #515a48;
+    --mainTextColor: #ffffff;
+    --secondaryTextColor: #eeeeee;
+    --borderColor: #161914;
+    --themeDotBorder: #ffffff;
+    --previewBg: rgba(81,90,72,0.8);
+    --previewShadow: #2a2f25;
+    --submitBtnColor: #669966;
+
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--mainTextColor) !important;
+}
+p.post-info{
+    color: var(--secondaryTextColor) !important;
+}
+.skills{
+    background-color: var(--previewShadow);
+
+}
+.skills ul li{
+    color: #ffffff;
+}
+.about-wrapper p a {
+    margin-right: 5px;
+    margin-left: 10px;
+    background-color: var(--borderColor);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
