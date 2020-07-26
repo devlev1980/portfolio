@@ -1,13 +1,13 @@
 {
   "name": "porftfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "my portfolio site",
   "main": "index.html",
   "scripts": {
     "dev": "parcel index.html"
   },
   "keywords": [],
-  "author": "",
+  "author": "YL",
   "license": "ISC",
   "devDependencies": {
     "fontawesome-4.7": "^4.7.0"
