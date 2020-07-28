@@ -26,9 +26,9 @@
                     <div id="dot-2" class="browser-dot"></div>
                     <div id="dot-3" class="browser-dot"></div>
                 </div>
-                <ul id="navigation">
-                    <li><a href="#contact-form">Contact</a></li>
-                </ul>
+<!--                <ul id="navigation">-->
+<!--                    <li><a href="#contact-form">Contact</a></li>-->
+<!--                </ul>-->
             </div>
             <div class="left-column">
                 <div class="image-wrapper">
@@ -63,9 +63,9 @@
     <div class="main-container">
         <div class="about-wrapper">
             <div class="about-me">
-                <h4>More about me</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, sint!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, in!</p>
+<!--                <h4>More about me</h4>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, sint!</p>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, in!</p>-->
             <h4>TOP EXPERTISE</h4>
                 <div class="divider"></div>
                 <p>Front End Developer with primary focus on Angular 5+
@@ -140,7 +140,7 @@
                     <div class="post-img-wrapper"><img class="thumbnail" src="img/articles_page.png" alt=""></div>
                     <div class="post-preview">
                         <h6 class="post-title">Articles</h6>
-                        <p class="post-info">Building page in HTML,CSS.Here I'm using Grid-layout,Flexbox,Media queries</p>
+                        <p class="post-info">Building responsive page in HTML,CSS</p>
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@
                     <img class="thumbnail" src="img/choose_plan.png" alt="">
                     <div class="post-preview">
                         <h6 class="post-title">Choose a plan</h6>
-                        <p class="post-info">Project was build in HTML,CSS with responsive design</p>
+                        <p class="post-info">Building responsive page in HTML,CSS</p>
                     </div>
                 </div>
             </div>
@@ -223,19 +223,29 @@
 <section class="s2">
     <div class="main-container">
         <h3 style="text-align: center">Keep in touch</h3>
-        <form action="" id="contact-form">
-            <label for="name">Name</label>
-            <input type="text" class="input-field" name="name" id="name">
+        <div class="contact-form">
+            <form action="https://portfolio-server-js.herokuapp.com/" id="contact-form" method="POST" target="_blank">
+                <label for="name">Name</label>
+                <input type="text" class="input-field" name="name" id="name" required>
 
-            <label for="subject">Subject</label>
-            <input type="text" class="input-field" name="subject" id="subject">
+                <label for="name">Company</label>
+                <input type="text" class="input-field" name="company" id="company" required>
 
-            <label for="message">Message</label>
-            <textarea name="message" id="message" ></textarea>
-            <button type="submit" class="btn-submit">Send</button>
-        </form>
+                <label for="name">Email</label>
+                <input type="text" class="input-field" name="email" id="email" required pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}">
+
+                <label for="subject">Subject</label>
+                <input type="text" class="input-field" name="subject" id="subject" required>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+                <button type="submit" class="btn-submit">Send</button>
+            </form>
+
+        </div>
     </div>
 </section>
+
 <script src="script.js" defer></script>
 
 </body>

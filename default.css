@@ -391,7 +391,7 @@ p.post-info{
     color: #4b5156;
     font-size: 14px;
 }
-#contact-form{
+.contact-form{
     display: block;
     max-width: 600px;
     width: 100%;
@@ -402,17 +402,20 @@ p.post-info{
     background-color: var(--mainColor);
     margin-bottom: 50px;
 }
-#contact-form label{
+.contact-form label{
     line-height: 2.7em;
 }
-#contact-form textarea{
+.contact-form textarea{
     min-height: 100px;
     font-size: 14px;
-    width: 100%;
+    width: calc(100% - 10px);
+    border:1px solid var(--borderColor);
+    border-radius: 5px;
+    resize: none;
 }
 .input-field{
-    width: 100%;
-    padding: 10px 0;
+    width: calc(100% - 10px);
+    padding: 10px 0 10px 7px;
     background-color: var(--secondaryColor);
     border-radius: 5px;
     border:1px solid var(--borderColor);
@@ -428,6 +431,7 @@ button.btn-submit{
     border: none;
     border-radius: 5px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
